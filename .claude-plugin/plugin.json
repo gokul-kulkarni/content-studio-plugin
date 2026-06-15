@@ -1,0 +1,9 @@
+{
+  "name": "content-studio",
+  "version": "0.4.0",
+  "description": "Turn a raw technical idea into coordinated, publish-ready content for LinkedIn, Substack, and Medium. Seven chained skills: explore (assumptions, clarification, lock the thesis and master content), write-linkedin, write-substack, write-medium (HTML), refine, design-brief (per-section images plus a LinkedIn PDF, for Claude Design), and distribute. Content-first: approve before generating posts; if content changes, regenerate every platform.",
+  "author": {
+    "name": "Gokul Kulkarni"
+  },
+  "keywords": ["content", "linkedin", "substack", "medium", "carousel", "writing", "thought-leadership", "claude-design", "workflow", "series"]
+}
