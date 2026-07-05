@@ -32,6 +32,7 @@ Find the single strongest angle and surface it explicitly. The raw framing is of
 - **Self-undercutting framing** — a hook that contradicts the thesis (e.g. calling something "the same story repeated" when the whole point is that the last step breaks the pattern).
 - **Loss-framed when it could be forward-looking** — a negative/ominous angle where an evolutionary, momentum-forward one is truer to intent. Default to optimistic unless the person wants critique or warning — but confirm, don't impose.
 - **Pedantry-bait** — hard dates, exact figures ("70 years"), contestable specifics that invite "well, actually" replies. Strip them unless load-bearing; timeless framing ("always," "every leap") is stronger and unarguable.
+- **Jargon-only framing** — a title/spine built from insider terms ("Agent Hands: Tools & MCP") measurably underperforms a concrete, curiosity-gap one ("Stop Prompting. Start Specifying") on open rate and engagement. Lead with the shift or the stakes in plain words; save the jargon for the body.
 
 ## Output: the spine + the locked content
 

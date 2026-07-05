@@ -1,6 +1,9 @@
 # Built plugin packages (the source of truth is the folder, not the zip)
 *.plugin
 
+# Personal analytics reports — private data, never publish
+reports/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

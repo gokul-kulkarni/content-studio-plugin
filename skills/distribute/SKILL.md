@@ -52,6 +52,7 @@ Medium has a built-in discovery audience, so reach comes from **curation**, not 
 - **Strip tracking params** (`?utm_...`, `?r=...`, share flags) for a clean preview.
 - **Put external links in the first comment**, not the LinkedIn post body, which suppresses reach. A framed first comment ("Wrote the long version here, where I get into [the spicy bit] 👇") beats a bare URL.
 - **Cross-posting is the real reach lever:** the warm LinkedIn audience converts to Substack subscribers far more than any discovery tag. Treat the assets as one funnel — carousel for discovery, essay/article for depth. When the same piece runs on both Substack and Medium, set the canonical URL to whichever published first so they don't compete in search.
+- **Every discovery post needs an explicit subscribe ask, or the reach leaks.** Large LinkedIn reach with a tiny subscriber gain is the most common failure — impressions that never got invited anywhere. Pair each LinkedIn post with a one-line subscribe CTA and the Substack link *in the first comment*; make the ask concrete ("subscribe for the next one in the series"), not a generic "follow me."
 
 ## Note on assets
 

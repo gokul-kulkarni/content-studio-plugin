@@ -13,8 +13,12 @@ if command -v claude >/dev/null 2>&1; then
   claude plugin validate .claude-plugin/plugin.json
 fi
 
-# Package only the plugin tree at the archive root. Stored (-0), no junk.
+# Package the plugin tree at the archive root. Stored (-0), no junk.
+# Pure-markdown plugin: just the manifest and the skills.
 rm -f "$OUT"
-zip -r -0 -X "$OUT" .claude-plugin skills -x "*.DS_Store" >/dev/null
+zip -r -0 -X "$OUT" \
+  .claude-plugin skills \
+  -x "*.DS_Store" \
+  >/dev/null
 
 echo "Built $OUT"
