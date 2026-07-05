@@ -27,7 +27,8 @@ Save the essay as a Markdown file.
 - **A blockquote** (`>`) around the single most quotable line — the core mental model — so it pops and is screenshot-able. Screenshot-ability is how essays get pulled back onto LinkedIn/X by other people.
 - **Numbered list** for any explicit progression of steps.
 - **A short, open-ended ender** — ideally a two-line kicker that hands the question back to the reader. If the person already wrote a strong ending, keep it.
-- **Series continuity** — if part of a series, open by recalling where the previous piece left off and close by teasing the next.
+- **At least one link out + a subscribe ask.** An essay with zero links is a dead funnel step — it can't send readers to the Medium deep-dive, the previous post in the series, or anywhere that compounds. Place one relevant inline link where it's genuinely useful (not a footer dump), and end with a one-line subscribe ask. *Rationale: real Substack data showed 0% click-through across every post that shipped without a link — the single biggest fixable outreach leak.*
+- **Series continuity** — if part of a series, open by recalling where the previous piece left off and close by teasing the next (link the previous post — that's also a natural inline link).
 
 ## Notes
 
