@@ -1,0 +1,17 @@
+{
+  "name": "content-studio-plugin",
+  "description": "Marketplace for the Content Studio Claude Code plugin — a content pipeline for LinkedIn, Substack, and Medium.",
+  "owner": {
+    "name": "Gokul Kulkarni"
+  },
+  "plugins": [
+    {
+      "name": "content-studio",
+      "description": "Turn a raw technical idea into coordinated, publish-ready content for LinkedIn, Substack, and Medium — then measure and improve it.",
+      "source": "./",
+      "version": "0.5.0",
+      "category": "productivity",
+      "tags": ["content", "linkedin", "substack", "medium", "writing", "analytics"]
+    }
+  ]
+}

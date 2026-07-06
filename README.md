@@ -78,8 +78,8 @@ version (it's safe to run repeatedly).
 Copy this folder into your Claude plugins directory yourself, or register it as a marketplace:
 
 ```bash
-claude plugin marketplace add <this-repo>
-claude plugin install content-studio@<marketplace>
+claude plugin marketplace add gokul-kulkarni/content-studio-plugin
+claude plugin install content-studio@content-studio-plugin
 ```
 
 The plugin is defined by `.claude-plugin/plugin.json`; each skill lives under `skills/<name>/SKILL.md`.
