@@ -60,7 +60,29 @@ This keeps LinkedIn, Substack, and Medium telling the *same* story instead of dr
 
 ## Install
 
-Copy this folder into your Claude plugins directory (or install from your marketplace). The plugin is defined by `.claude-plugin/plugin.json`; each skill lives under `skills/<name>/SKILL.md`.
+**Quickest path:**
+
+```bash
+npx content-studio-plugin
+# or
+bunx content-studio-plugin
+```
+
+This copies the plugin into `~/.claude/skills/content-studio/`. Claude Code auto-loads anything
+placed there as `content-studio@skills-dir` on your next session — no marketplace registration
+or git clone required. Re-run the same command any time to upgrade to the latest published
+version (it's safe to run repeatedly).
+
+**Manual / marketplace install (alternative):**
+
+Copy this folder into your Claude plugins directory yourself, or register it as a marketplace:
+
+```bash
+claude plugin marketplace add <this-repo>
+claude plugin install content-studio@<marketplace>
+```
+
+The plugin is defined by `.claude-plugin/plugin.json`; each skill lives under `skills/<name>/SKILL.md`.
 
 Everything works out of the box — it's a pure-markdown plugin, no server or dependencies to install. The content skills (Phases 1–4) turn ideas into posts; the **analytics** skills (Phase 5) parse the analytics **exports you download** from each platform (no cookies, no scraping).
 

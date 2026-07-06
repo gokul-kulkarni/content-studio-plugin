@@ -1,0 +1,19 @@
+{
+  "name": "content-studio-plugin",
+  "version": "0.5.0",
+  "description": "Installer for the Content Studio Claude Code plugin — a content pipeline for LinkedIn, Substack, and Medium.",
+  "bin": "./bin/cli.js",
+  "files": [".claude-plugin", "skills", "bin", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gokul-kulkarni/content-studio-plugin.git"
+  },
+  "author": {
+    "name": "Gokul Kulkarni"
+  },
+  "keywords": ["claude-code", "claude-plugin", "cli", "installer", "content", "linkedin", "substack", "medium"]
+}
