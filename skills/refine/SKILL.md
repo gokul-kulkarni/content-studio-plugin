@@ -25,7 +25,7 @@ Confirm the rewrite level first — light polish, restructure-keep-ideas, or agg
 - **Catch contradictions and self-undercutting lines** — e.g. a framing that fights the thesis.
 - **Hunt duplicate transitions and leftover lines** from earlier edits (two stacked "Then came X…" sentences doing the same job is the classic tell).
 - **Resolve muddled or contestable claims** — tighten anything imprecise; strip pedantry-bait (hard figures, contestable dates) unless load-bearing.
-- **Keep the running example identical** — the same concrete example must appear in every snippet and every platform. A swapped or half-swapped example is a classic drift bug; if the example changes, change it everywhere.
+- **Keep the running example identical** — the same concrete example must appear in every snippet, every platform, **and every diagram label**. A swapped or half-swapped example is a classic drift bug; if the example changes, change it everywhere, including `diagrams/*/candidate.json`.
 
 ## Consistency & change-protocol pass across assets
 
@@ -34,4 +34,5 @@ This is the step most often skipped, and it's where the "content first" rule is 
 - When framing or wording changes, propagate it across **every** asset, not just the one being edited. The common failure: fixing a phrase on one carousel slide but leaving the same rejected phrase in the caption, the essay title, and the essay body. The package only feels coordinated if the spine reads identically everywhere — hook, caption, title, and closing all in agreement.
 - **A content change is a master-content change.** If the person asks to alter the substance after platform posts already exist, do **not** patch a single platform. Update the locked master content first (back in **explore**), re-confirm it with the person, then regenerate the LinkedIn, Substack, and Medium assets from the new master so all three stay in sync.
 - **Re-check the design hand-off too.** If sections were added, removed, or reordered, the per-section image briefs from **design-brief** are now stale — flag that they need regenerating.
+- **Re-render stale archify diagrams.** A diagram is stale when its section changed, its labels no longer match the prose, or the running example or spine moved. Don't patch PNGs. Edit that diagram's `diagrams/<n>-<slug>/candidate.json`, then re-run `finalize`, `export-svg` and `svg-to-png.sh` as in the **design-brief** skill's `archify.md`. Use the same frame as before: `section` for articles, `slide` for LinkedIn. If sections were renumbered, rename the diagram folders and PNGs to match, and update every reference in the Substack Markdown, the Medium HTML and the LinkedIn slide list. List what you re-rendered.
 - **Series continuity:** confirm the call-back to the previous piece and the tease for the next still read correctly after edits.

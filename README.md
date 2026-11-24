@@ -46,12 +46,12 @@ This keeps LinkedIn, Substack, and Medium telling the *same* story instead of dr
 
 | Skill | Phase | Does |
 |---|---|---|
-| `explore` | 1 | States assumptions up front, asks clarifying questions, runs an accuracy + framing pass, and locks the thesis spine and master content. The approval gate lives here. |
+| `explore` | 1 | States assumptions up front, asks clarifying questions, runs an accuracy + framing pass, and locks the thesis spine and master content. The approval gate lives here. Optionally previews the core mental model as an archify diagram. |
 | `write-linkedin` | 2 | Carousel (slide-by-slide) + caption, from the locked content. Posted as a PDF document. |
 | `write-substack` | 2 | Long-form essay in Markdown, native to Substack's reading/email format. |
 | `write-medium` | 2 | Medium article as clean semantic **HTML** (Medium doesn't render pasted Markdown). |
-| `refine` | 2–4 | Restructures rough drafts, clears confusions, and runs the cross-asset consistency + change-protocol re-sync. |
-| `design-brief` | 3 | Produces a single **Claude Design hand-off artifact**: concise title + description per section (Substack/Medium images) and a slide-by-slide **PDF** brief (LinkedIn). |
+| `refine` | 2–4 | Restructures rough drafts, clears confusions, and runs the cross-asset consistency + change-protocol re-sync, including re-rendering stale archify diagrams. |
+| `design-brief` | 3 | Produces a single **Claude Design hand-off artifact**: concise title + description per section (Substack/Medium images) and a slide-by-slide **PDF** brief (LinkedIn). With [archify](https://github.com/tt-a1i/archify) installed, it **renders** every diagram-shaped visual (mental model, flows, timelines, systems) as light/dark PNGs + interactive HTML. |
 | `distribute` | 4 | Posting timing, hashtags/tags, SEO description, Substack launch Note, Medium Boost/publications, canonical cross-posting, link hygiene. |
 | `substack-stats` | 5 | Subscribers (free+paid), open rate, growth, and per-post views/opens/clicks/reactions/comments. Parses the Substack export ZIP / Stats export (+ optional public fetch). |
 | `medium-stats` | 5 | Per-post views, reads, read-ratio, and claps. Parses the GraphQL stats response / Stats export (+ public RSS inventory). |
@@ -84,7 +84,22 @@ claude plugin install content-studio@content-studio-plugin
 
 The plugin is defined by `.claude-plugin/plugin.json`; each skill lives under `skills/<name>/SKILL.md`.
 
-Everything works out of the box — it's a pure-markdown plugin, no server or dependencies to install. The content skills (Phases 1–4) turn ideas into posts; the **analytics** skills (Phase 5) parse the analytics **exports you download** from each platform (no cookies, no scraping).
+Everything works out of the box — it's a pure-markdown plugin, no server or dependencies to install.
+
+### Optional: real diagrams with archify
+
+Install [archify](https://github.com/tt-a1i/archify) (needs Node + Chrome) and the content skills will **render** diagrams instead of only describing them:
+
+```bash
+npx -y skills@latest add https://archify.si --skill archify --agent claude-code --global --copy --yes
+```
+
+- `explore` previews the core mental model as a diagram during the approval gate.
+- `design-brief` renders every diagram-shaped section and slide.
+- `write-*` reference the rendered PNGs.
+- `refine` re-renders them when the content changes.
+
+Without archify, nothing breaks: the skills fall back to the text design brief. The shared procedure is in `skills/design-brief/archify.md`. The content skills (Phases 1–4) turn ideas into posts; the **analytics** skills (Phase 5) parse the analytics **exports you download** from each platform (no cookies, no scraping).
 
 ## Design hand-off (Phase 3)
 
@@ -93,6 +108,7 @@ Everything works out of the box — it's a pure-markdown plugin, no server or de
 - **Substack & Medium** → a concise **title + description for every section** (one inline image per section, plus a shared 1.91:1 hero). Generated as light + dark variants.
 - **LinkedIn** → a **slide-by-slide PDF carousel brief** (LinkedIn document posts are PDFs).
 - A **shared visual identity** block (background, single accent, card style, mono labels, byline, aspect ratios) stated once so every image matches.
+- **Diagrams rendered by archify** (when installed). The mental model and any flow, timeline, system or state beat are rendered to `light-assets/` / `dark-assets/` PNGs (16:9 for articles, 4:5 for carousel slides), with the editable source in `diagrams/<n>-<slug>/candidate.json`. The design tool only makes the hero and decorative art.
 
 ## Analytics (Phase 5)
 

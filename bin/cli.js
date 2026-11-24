@@ -58,6 +58,19 @@ function main() {
   console.log('it auto-loads as content-studio@skills-dir.');
   console.log('');
   console.log(`To remove it later: rm -rf "${targetRoot}"`);
+
+  if (!isArchifyInstalled(skillsRoot)) {
+    console.log('');
+    console.log('Optional: install archify so design-brief/explore can render real diagrams:');
+    console.log(`  ${ARCHIFY_INSTALL_CMD}`);
+  }
+}
+
+const ARCHIFY_INSTALL_CMD =
+  'npx -y skills@latest add https://archify.si --skill archify --agent claude-code --global --copy --yes';
+
+function isArchifyInstalled(skillsRoot) {
+  return fs.existsSync(path.join(skillsRoot, 'archify', 'SKILL.md'));
 }
 
 try {

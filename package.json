@@ -1,6 +1,6 @@
 {
   "name": "content-studio-plugin",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Installer for the Content Studio Claude Code plugin — a content pipeline for LinkedIn, Substack, and Medium.",
   "bin": "./bin/cli.js",
   "files": [".claude-plugin", "skills", "bin", "README.md", "LICENSE"],

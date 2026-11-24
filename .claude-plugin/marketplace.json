@@ -9,7 +9,7 @@
       "name": "content-studio",
       "description": "Turn a raw technical idea into coordinated, publish-ready content for LinkedIn, Substack, and Medium — then measure and improve it.",
       "source": "./",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "category": "productivity",
       "tags": ["content", "linkedin", "substack", "medium", "writing", "analytics"]
     }

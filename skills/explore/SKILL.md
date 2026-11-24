@@ -43,8 +43,19 @@ End with two things:
 
 Pick **one concrete running example** and note it explicitly — every platform and every code snippet must reuse the *same* example so the package feels coordinated.
 
+## Optional: preview the mental model as a diagram
+
+If archify is installed (detection is in the **design-brief** skill's `archify.md`), render **one draft diagram of the core mental model** from the spine and running example. This lets the person judge the visual story at the same moment they judge the words.
+
+- Pick the type whose shape *is* the thesis (usually `workflow`, `architecture`, `lifecycle` or `timeline`), and label it with the running example's exact terms.
+- Save it to `diagrams/preview-mental-model/` (candidate + HTML + light/dark PNGs), following `archify.md`. Present it as a **draft**, alongside the master content.
+- If the diagram is hard to draw cleanly, treat that as a framing signal: the spine may be muddled. Raise it, don't hide it.
+- If archify isn't installed, skip this quietly. At most, mention once that it's available. Never block the gate on it.
+
+**design-brief** later reuses this candidate for the final mental-model diagram.
+
 ## The approval gate (do not skip)
 
-State clearly that this is the content-finalization phase, then **stop and get explicit approval** before any platform post is generated. Only once the person says the content is good do the **write-linkedin**, **write-substack**, and **write-medium** skills render it.
+State clearly that this is the content-finalization phase, then **stop and get explicit approval** before any platform post is generated. If a preview diagram was rendered, approval covers it too: if the person wants the diagram changed, that usually means the spine needs changing. Only once the person says the content is good do the **write-linkedin**, **write-substack**, and **write-medium** skills render it.
 
 If the person later asks to change the content (even after posts exist), come back here: update the master content, re-confirm, then have every platform asset regenerated so they stay in sync. Never let a content change live in only one platform.

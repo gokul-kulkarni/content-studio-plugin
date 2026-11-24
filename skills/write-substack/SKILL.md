@@ -33,7 +33,8 @@ Save the essay as a Markdown file.
 ## Notes
 
 - Keep it scannable: a reader skimming only the title, subtitle, headers, and bold lead-ins should still get the whole arc.
-- **Images are uploaded manually** into the Substack editor at each section spot — the Markdown references (e.g. `light-assets/2-...png`) are just pointers. Keep Substack light on images (email rendering + deliverability): a shared hero plus a few section diagrams, not one per paragraph.
+- **Images are uploaded manually** into the Substack editor at each section spot — the Markdown references (e.g. `light-assets/2-...png`) are just pointers. Keep Substack light on images (email rendering + deliverability): a shared hero plus a few section diagrams, not one per paragraph. archify diagrams count against that budget.
+- **Diagrams come from archify.** Where a section's beat is diagram-shaped (and always for the mental model), point at the archify render: `![<takeaway caption>](light-assets/<n>-<slug>.png)` with a one-line italic caption under it. Use the **light** PNG; most Substack reading happens in light-mode email. If the PNG doesn't exist yet, leave the pointer and note that **design-brief** renders it (procedure in its `archify.md`). Diagram labels must use the same running-example terms as the prose around them.
 - The **SEO/meta description, topic categories, launch Note, and posting** all live in the distribute skill — point there once the essay is drafted.
 - For the per-section image specs, use the **design-brief** skill once the content is locked.
 - If the input is an existing rough or overlong draft rather than locked content, use the refine skill instead (restructure, keep ideas).

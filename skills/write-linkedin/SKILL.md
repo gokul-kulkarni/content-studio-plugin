@@ -25,13 +25,13 @@ Uploaded as a PDF "document" post.
 2. **Build slides** — one idea each, walking the argument; give each a bold lead-in label so the deck scans at a glance.
 3. **Insight slide** — name the non-obvious through-line ("the aha").
 4. **Turn / payoff** — the boldest or most surprising step, framed as the natural culmination; visually distinct from the build slides.
-5. **Mental-model slide** — a single quotable line (the slide people screenshot).
+5. **Mental-model slide** — a single quotable line (the slide people screenshot), and when archify is installed the **mental-model diagram** under it. That diagram is rendered top-down with the 4:5 `slide` frame (see the **design-brief** skill's `archify.md`), saved as `light-assets/<n>-<slug>-slide.png`. A build slide that is really a flow or progression can use an archify diagram the same way. Keep it to one or two per deck: the carousel is text-led.
 6. **Where it goes** — the forward-looking implication.
 7. **CTA** — a short prompt plus an open question ("What rung are you building on?").
 
 Keep slides to a few short lines; they must be readable on a phone.
 
-**Design note to include for the design tool:** slide count; one accent color reserved for the hero element of the story; consistent neutrals elsewhere; build slides share a motif; the turn slide breaks that rhythm. If the framing is positive/evolutionary, explicitly say "no warning aesthetics (red, cracks, alert icons)." For the full slide-by-slide PDF spec, use the **design-brief** skill.
+**Design note to include for the design tool:** slide count; which slides are **pre-rendered archify diagrams** (place as-is, don't redraw); one accent color reserved for the hero element of the story; consistent neutrals elsewhere; build slides share a motif; the turn slide breaks that rhythm. If the framing is positive/evolutionary, explicitly say "no warning aesthetics (red, cracks, alert icons)." For the full slide-by-slide PDF spec, use the **design-brief** skill.
 
 ## The caption
 
