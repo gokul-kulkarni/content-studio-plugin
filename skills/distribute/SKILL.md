@@ -57,3 +57,10 @@ Medium has a built-in discovery audience, so reach comes from **curation**, not 
 ## Note on assets
 
 By the time you distribute, the visuals should already exist from the **design-brief** hand-off (per-section images for Substack/Medium, the PDF carousel for LinkedIn). Confirm the shared hero is in place — it doubles as the Substack thumbnail and the LinkedIn link-preview.
+
+If diagrams were rendered with archify, check that before posting:
+- every image the posts reference exists in `light-assets/` (and `dark-assets/` if used);
+- the LinkedIn diagram slides are in the PDF;
+- no diagram is stale against the final text. If one is, run **refine** before posting.
+
+The interactive `diagrams/<n>-<slug>/<n>-<slug>.html` is a standalone file. If you host it somewhere public, it makes a good "explore the full diagram" link in the Medium article or in a LinkedIn first comment. It's optional, and the usual link hygiene applies.

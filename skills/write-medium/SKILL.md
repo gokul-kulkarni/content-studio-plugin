@@ -44,7 +44,7 @@ Produce a clean, semantic HTML file. Use plain content tags only — no CSS, no 
 - `<blockquote>` — the **pull quote**.
 - `<ul>` / `<ol>` + `<li>` — lists (and the listicle structure).
 - `<pre><code>` — code blocks (escape `<`, `>`, `&` inside them).
-- `<figure><img src="..."><figcaption>…</figcaption></figure>` — the feature image and any inline images.
+- `<figure><img src="..."><figcaption>…</figcaption></figure>` — the feature image and any inline images. For diagram-shaped sections (and always the mental model), use the archify render: `<figure><img src="light-assets/<n>-<slug>.png" alt="…"><figcaption>takeaway in one line</figcaption></figure>`. Use the 16:9 `section` frame, see the **design-brief** skill's `archify.md`. The relative path keeps the image when the rendered HTML is pasted into Medium. If the PNG doesn't exist yet, keep the `<figure>` placeholder and note that **design-brief** renders it.
 - `<a href="...">` for links, `<strong>` / `<em>` for emphasis.
 
 Wrap it in a minimal `<html><body>…</body></html>` document so it opens and renders in a browser.
@@ -57,4 +57,4 @@ After import, confirm the title and subtitle landed as Medium's title/kicker, an
 
 ## Publishing levers (hand off to distribute)
 
-Tags, choosing a publication, the Boost/curation angle, the member paywall and Friend Links, and the **canonical-URL import** (essential if the piece is already on Substack) all live in the **distribute** skill. Draft the article here, then go there to publish it for reach. For the feature image and inline section images, use the **design-brief** skill.
+Tags, choosing a publication, the Boost/curation angle, the member paywall and Friend Links, and the **canonical-URL import** (essential if the piece is already on Substack) all live in the **distribute** skill. Draft the article here, then go there to publish it for reach. For the feature image and inline section images, use the **design-brief** skill, which renders the diagram ones with archify.
